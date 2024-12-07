@@ -4,7 +4,6 @@ import java.util.List;
 import java.util.Scanner;
 
 class User_Name {
-    static Scanner in = new Scanner(System.in);
 	private String user_name;
 
     String input_name;

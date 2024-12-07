@@ -43,6 +43,84 @@ public class Main {
             }
         }
     }
+    
+    public static void main(String[] args){    
+        System.out.println("\n\n\n\n\n\nWelcome to Your Cli-Mate Learning Application!\n");
+
+        System.out.print(CC_Functions.white + "To proceed, please enter your name: " + CC_Functions.reset);
+        User_Name.input_name = in.nextLine();
+
+        User_Name.getUser_Name();
+
+        while(User_Name.getUser_Name().equals("")){
+            System.out.print("\nYou have not yet entered your name. To proceed, please enter your name: ");
+            User_Name.input_name = in.nextLine();
+        }
+
+        CC_Functions.clrscr();
+
+        System.out.println(CC_Functions.lightyellow + "\n\n\n\n\n\nName Successfully Saved!" + CC_Functions.reset);
+        CC_Functions.EnterKey();
+
+        do{
+            System.out.println("\n\n\n\n\n");
+            System.out.println("Select the course of action you want to do from the menu below.\n");
+            System.out.println(CC_Functions.lightcyan + "|==========================================================================================|");  
+            System.out.println("| Main Menu                                                                                |");
+            System.out.println("|==========================================================================================|");   
+            System.out.println("|"+ CC_Functions.yellow + CC_Functions.lightmagenta + " 1. Learn About Climate Change                                                            "+ CC_Functions.lightcyan + "|");
+            System.out.println("|"+ CC_Functions.yellow + CC_Functions.lightmagenta + " 2. Learn the Important Reasons for Taking Action Against Climate Change                  "+ CC_Functions.lightcyan + "|");
+            System.out.println("|"+ CC_Functions.yellow + CC_Functions.lightmagenta + " 3. Learn the Solutions for Climate Change, Provided by Natural Resources Defence Council "+ CC_Functions.lightcyan + "|");
+            System.out.println("|"+ CC_Functions.yellow + CC_Functions.lightmagenta + " 4. Learn Ways to Help Reducing the Impact of Climate Change                              "+ CC_Functions.lightcyan + "|");
+            System.out.println("|"+ CC_Functions.yellow + CC_Functions.lightmagenta + " 5. Learn Details About Existing Campaigns Fighting Against Climate Change                "+ CC_Functions.lightcyan + "|");
+            System.out.println("|"+ CC_Functions.yellow + CC_Functions.lightmagenta + " 6. Do Challenges                                                                         "+ CC_Functions.lightcyan + "|");
+            System.out.println("|"+ CC_Functions.yellow + CC_Functions.lightmagenta + " 7. Check Progress                                                                        "+ CC_Functions.lightcyan + "|");
+            System.out.println("|"+ CC_Functions.yellow + CC_Functions.lightmagenta + " 8. Learn What Your Cli-Mate Learning Application is About                                "+ CC_Functions.lightcyan + "|");
+            System.out.println("|"+ CC_Functions.yellow + CC_Functions.lightmagenta + " 9. Exit/Quit                                                                             "+ CC_Functions.lightcyan + "|");
+            System.out.println("|==========================================================================================|\n" + CC_Functions.reset);
+            System.out.print(CC_Functions.yellow + "Please enter the number of your choice: " + CC_Functions.reset);
+
+            InvalidInput();
+
+            choice = userInput;
+            CC_Functions.clrscr();
+
+            switch(choice){
+                case 1:
+                    About_Climate_Change();
+                    break;
+                case 2:
+                    Reasons();
+                    break;
+                case 3:
+                    Solutions();
+                    break;
+                case 4:
+                    Ways();
+                    break;
+                case 5:
+                    Campaigns();
+                    break;
+                case 6:
+                    Challenges();                
+                    break;
+                case 7:
+                    Progress();
+                    break;
+                case 8:
+                    About();
+                    break;
+                case 9:
+                    System.out.println("\n\n\n\n\nThank you for using Your Cli-Mate Learning Application!\nGoodbye and have a nice day!\n\n\n\n\n");
+                    return;
+                default: 
+                    CC_Functions.EnterKeyError();
+            }
+        }
+        while(choice != 9);
+
+        in.close();
+    }
 
     public static void About_Climate_Change(){
 
@@ -1189,84 +1267,6 @@ public class Main {
         System.out.println("\n\n\n\n\n\n\tThis application was created with the intention to give a detailed and compiled information about what climate change is in order to promote awareness as well as help with the SDG's 13th goal about taking action against climate change. This is not only the reason for the creation of this application as this app was intended to also help spread and give knowledge and learnings as well as insights to encourage everyone to help with the fight against climate change such as sharing the reasons why one should take action against climate change and the ways we could help to reduce the impact of the climate change as individuals residing here on Earth and as people who have a fair share of responsibility for what the Earth have become as of now. Because of our continuous use of resources such as fossils and oils as well as our continuous burning of plastic wastes, use of chemicals, cutting of trees, use of transportation operated by non-renewable energy, we slowly contribute to the impact and worsening of the climate change state on our Earth. This app was created to help people learn what they need to learn about climate change and if ever that they have trouble remembering or understanding what it is, the app was additionally given features such as giving challenges or tasks that could help remind as well as teach the users things related to climate change.");
         CC_Functions.EnterBackKey();
         return;
-    }
-
-    public static void main(String[] args){    
-        System.out.println("\n\n\n\n\n\nWelcome to Your Cli-Mate Learning Application!\n");
-
-        System.out.print(CC_Functions.white + "To proceed, please enter your name: " + CC_Functions.reset);
-        User_Name.input_name = in.nextLine();
-
-        User_Name.getUser_Name();
-
-        while(User_Name.getUser_Name().equals("")){
-            System.out.print("\nYou have not yet entered your name. To proceed, please enter your name: ");
-            User_Name.input_name = in.nextLine();
-        }
-
-        CC_Functions.clrscr();
-
-        System.out.println(CC_Functions.lightyellow + "\n\n\n\n\n\nName Successfully Saved!" + CC_Functions.reset);
-        CC_Functions.EnterKey();
-
-        do{
-            System.out.println("\n\n\n\n\n");
-            System.out.println("Select the course of action you want to do from the menu below.\n");
-            System.out.println(CC_Functions.lightcyan + "|==========================================================================================|");  
-            System.out.println("| Main Menu                                                                                |");
-            System.out.println("|==========================================================================================|");   
-            System.out.println("|"+ CC_Functions.yellow + CC_Functions.lightmagenta + " 1. Learn About Climate Change                                                            "+ CC_Functions.lightcyan + "|");
-            System.out.println("|"+ CC_Functions.yellow + CC_Functions.lightmagenta + " 2. Learn the Important Reasons for Taking Action Against Climate Change                  "+ CC_Functions.lightcyan + "|");
-            System.out.println("|"+ CC_Functions.yellow + CC_Functions.lightmagenta + " 3. Learn the Solutions for Climate Change, Provided by Natural Resources Defence Council "+ CC_Functions.lightcyan + "|");
-            System.out.println("|"+ CC_Functions.yellow + CC_Functions.lightmagenta + " 4. Learn Ways to Help Reducing the Impact of Climate Change                              "+ CC_Functions.lightcyan + "|");
-            System.out.println("|"+ CC_Functions.yellow + CC_Functions.lightmagenta + " 5. Learn Details About Existing Campaigns Fighting Against Climate Change                "+ CC_Functions.lightcyan + "|");
-            System.out.println("|"+ CC_Functions.yellow + CC_Functions.lightmagenta + " 6. Do Challenges                                                                         "+ CC_Functions.lightcyan + "|");
-            System.out.println("|"+ CC_Functions.yellow + CC_Functions.lightmagenta + " 7. Check Progress                                                                        "+ CC_Functions.lightcyan + "|");
-            System.out.println("|"+ CC_Functions.yellow + CC_Functions.lightmagenta + " 8. Learn What Your Cli-Mate Learning Application is About                                "+ CC_Functions.lightcyan + "|");
-            System.out.println("|"+ CC_Functions.yellow + CC_Functions.lightmagenta + " 9. Exit/Quit                                                                             "+ CC_Functions.lightcyan + "|");
-            System.out.println("|==========================================================================================|\n" + CC_Functions.reset);
-            System.out.print(CC_Functions.yellow + "Please enter the number of your choice: " + CC_Functions.reset);
-
-            InvalidInput();
-
-            choice = userInput;
-            CC_Functions.clrscr();
-
-            switch(choice){
-                case 1:
-                    About_Climate_Change();
-                    break;
-                case 2:
-                    Reasons();
-                    break;
-                case 3:
-                    Solutions();
-                    break;
-                case 4:
-                    Ways();
-                    break;
-                case 5:
-                    Campaigns();
-                    break;
-                case 6:
-                    Challenges();                
-                    break;
-                case 7:
-                    Progress();
-                    break;
-                case 8:
-                    About();
-                    break;
-                case 9:
-                    System.out.println("\n\n\n\n\nThank you for using Your Cli-Mate Learning Application!\nGoodbye and have a nice day!\n\n\n\n\n");
-                    return;
-                default: 
-                    CC_Functions.EnterKeyError();
-            }
-        }
-        while(choice != 9);
-
-        in.close();
     }
 
     private static void displayCC_Info1() { //title & detail

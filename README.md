@@ -30,7 +30,7 @@ IV. Instructions for running the program
 
     Step 2: Searching for the Program's Repository
 
-            After creating or logging-in in your GitHub account, click the search bar of the GitHub website located in the same line as that of the word "Dashboard" just below the browser's search bar. When you finished clicking the searching bar, copy and paste this part inside the double quotation then "repo:loreyn-loreyn/OOP-FINAL-PROJECT".
+            After creating or logging-in in your GitHub account, click the search bar of the GitHub website located in the same line as that of the word "Dashboard" just below the browser's search bar. When you finished clicking the searching bar, copy and paste this part inside the double quotation then "repo:loreyn-loreyn/OOP_FINAL_PROJECT__Your_Cli-Mate_Learning_Application ".
     
     Step 3: Accessing Program
 

@@ -40,4 +40,6 @@ IV. Instructions for running the program
 
     Step 4: Running the Program
 
-            The successful installation of the extension guarantees that the program could then be run and compiled without a problem regarding the compiler. What you now need to do is to click the file icon (just on top of the search icon on the left part of the website) and click the Main.java file. After clicking the Main.java file, find the play button on the right upper part of the screen and click it to run the program. (You could also run the program by clicking the "Run" word which is a button just on top of "public static void Main(String[] args) function.)
+            The successful installation of the extension guarantees that the program could then be run and compiled without a problem regarding the compiler. What you now need to do is to click the file icon (just on top of the search icon on the left part of the website) and click the Main.java file. After clicking the Main.java file, find the Play button on the right upper part of the screen and click it to run the program (you could also run the program by clicking the "Run" word which is a button just on top of "public static void Main(String[] args) function). 
+            
+            (NOTE: When a notification which lets you answer between yes or no after running the program, click yes to successfully run the program.)
